@@ -71,6 +71,10 @@
         .list-group-item { cursor: pointer; }
         .alert-info { background-color: #e7f3ff; border-color: #bee5eb; }
         @media (max-width: 576px) { body { padding: 10px; } }
+        .card { margin-bottom: 20px; border: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .card-header { background-color: #f8f9fa; font-weight: bold; }
+        .icon-header { display: flex; align-items: center; }
+        .icon-header i { margin-right: 10px; color: #0056b3; }
     </style>
 </head>
 <body>
@@ -292,470 +296,420 @@
             </div>
         </div>
         <div class="tab-pane fade" id="guide" role="tabpanel" aria-labelledby="guide-tab">
-            <h1>The Bedside Neurological Examination of the Unresponsive Patient: A Clinical Guide</h1>
+            <div class="card">
+                <div class="card-header icon-header">
+                    <i class="fas fa-stethoscope"></i>
+                    <h1>The Bedside Neurological Examination of the Unresponsive Patient: A Clinical Guide</h1>
+                </div>
+                <div class="card-body">
+                    <div class="card">
+                        <div class="card-header icon-header">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <h2>Immediate Bedside Priorities: Stabilize Before You Examine</h2>
+                        </div>
+                        <div class="card-body">
+                            <p>The evaluation of an unresponsive patient is a medical emergency that demands a structured, prioritized approach. Before any detailed neurological assessment can be performed, life-threatening conditions must be identified and managed. The primary principle is to treat the patient, not just the neurological signs. The initial actions at the bedside should always follow a systematic algorithm focused on physiological stabilization, as a detailed neurological examination is meaningless in a hemodynamically unstable patient. This initial phase is crucial, as the cause of coma may be a readily reversible condition that, if treated promptly, can lead to rapid clinical improvement.</p>
 
-            <h2>Immediate Bedside Priorities: Stabilize Before You Examine</h2>
-            <p>The evaluation of an unresponsive patient is a medical emergency that demands a structured, prioritized approach. Before any detailed neurological assessment can be performed, life-threatening conditions must be identified and managed. The primary principle is to treat the patient, not just the neurological signs. The initial actions at the bedside should always follow a systematic algorithm focused on physiological stabilization, as a detailed neurological examination is meaningless in a hemodynamically unstable patient. This initial phase is crucial, as the cause of coma may be a readily reversible condition that, if treated promptly, can lead to rapid clinical improvement.[1, 2]</p>
-
-            <h3>Assess and Stabilize: The ABCs</h3>
-            <p>The first and most critical step is a rapid assessment and management of the patient's fundamental physiological status, commonly referred to as the ABCs (Airway, Breathing, Circulation) or CABs (Circulation, Airway, Breathing).[3] This must be performed immediately upon encountering an unresponsive patient.</p>
-            <ul>
-                <li><strong>C - Circulation:</strong> The initial priority is to verify adequate circulation. The examiner must immediately check for a pulse and measure blood pressure. Hypotension is a common cause of decreased cerebral perfusion and must be aggressively treated with intravenous fluids and vasopressors as needed. Secure and reliable intravenous (IV) access is essential for administering emergency medications and fluids.[3]</li>
-                <li><strong>A - Airway:</strong> The patency of the airway must be assessed. An unresponsive patient is at high risk for airway obstruction from the tongue, secretions, or vomit. They often cannot protect their own airway, increasing the risk of aspiration. The decision to intubate should be considered early to secure a definitive airway, ensure adequate ventilation, and prevent aspiration.[1]</li>
-                <li><strong>B - Breathing:</strong> Once the airway is secured or deemed patent, the patient's respiratory status must be evaluated. This includes assessing the respiratory rate, the effort of breathing, and oxygen saturation via pulse oximetry. All unresponsive patients should receive supplemental oxygen, and those with inadequate respiratory effort or profound hypoxemia require mechanical ventilation.[1, 3]</li>
-                <li><strong>C-Spine - Cervical Spine Precautions:</strong> In any patient where trauma is known or suspected, or if the history is unknown, the cervical spine must be presumed to be unstable and must be immobilized with a cervical collar. This precaution is paramount to prevent iatrogenic spinal cord injury. Failure to observe this rule can have catastrophic consequences. Importantly, the presence of a cervical collar will directly contraindicate certain parts of the subsequent neurological exam, specifically the oculocephalic maneuver.[1, 4]</li>
-            </ul>
-
-            <h3>Check for and Treat Readily Reversible Causes</h3>
-            <p>Concurrently with stabilization, the clinician must rapidly screen for and treat common and easily reversible causes of coma. These interventions can be life-saving and may obviate the need for a more extensive workup.</p>
-            <ul>
-                <li><strong>Hypoglycemia:</strong> Severe hypoglycemia is a frequent cause of altered mental status and coma.
-                    <ul>
-                        <li><strong>Action:</strong> An immediate point-of-care (finger-stick) glucose test must be performed on every unresponsive patient.[1, 2]</li>
-                        <li><strong>Treatment:</strong> If the blood glucose is low (e.g., < 70 mg/dL), 25 to 50 mL of 50% dextrose (D50) should be administered intravenously.[1]</li>
-                        <li><strong class="pearl">Clinical Pearl:</strong> In patients at risk for nutritional deficiency and Wernicke's encephalopathy (e.g., those with a history of alcohol use disorder, malnutrition, or bariatric surgery), 100 mg of thiamine must be administered intravenously before or concurrently with dextrose. Giving dextrose alone in a thiamine-deficient state can precipitate acute Wernicke's encephalopathy.[2, 3]</li>
-                    </ul>
-                </li>
-                <li><strong>Toxidromes:</strong> Toxic ingestions are another common cause of coma.
-                    <ul>
-                        <li><strong>Opioid Overdose:</strong> The clinical triad of coma, respiratory depression, and pinpoint (miotic) pupils is highly suggestive of an opioid toxidrome.[2]</li>
-                        <li><strong>Action:</strong> If opioid overdose is suspected based on clinical signs or history, naloxone should be administered intravenously or intramuscularly. The dose may need to be repeated, as the duration of action of many opioids exceeds that of naloxone.[2, 3]</li>
-                        <li><strong>Benzodiazepine Overdose:</strong> While benzodiazepines can cause stupor and coma, they rarely cause severe respiratory depression unless co-ingested with other sedatives like alcohol or opioids. The reversal agent, flumazenil, should be used with extreme caution, as it can precipitate withdrawal seizures in patients with chronic benzodiazepine dependence or lower the seizure threshold in patients with a history of seizures or co-ingestion of a pro-convulsant substance. Its routine use is generally discouraged.</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <h3>Essential Preliminaries for the Neurological Exam</h3>
-            <p>Before beginning the formal neurological examination, several key pieces of information must be gathered and recorded. These data provide the essential context needed to interpret the subsequent findings accurately.</p>
-            <ul>
-                <li><strong>Record Sedation:</strong> This is a non-negotiable prerequisite for any meaningful neurological assessment. The type, dose, and time of last administration of all sedative and analgesic medications must be documented. It is impossible to interpret a patient's level of arousal or motor responses without knowing if they are under the influence of drugs like propofol, benzodiazepines, or opioids. The exam should ideally be performed after a "sedation holiday," where infusions are held for a period to allow for drug clearance. A proper record would state, for example: "Patient was on a propofol infusion at 1.5 mg/min that was stopped 20 minutes before the exam".[4]</li>
-                <li><strong>Gather History:</strong> While stabilization is underway, any available history should be obtained from emergency medical services (EMS), family members, friends, or other witnesses. Key information includes the time the patient was last seen well, the circumstances in which they were found, their past medical and surgical history, a complete list of medications, and any history of alcohol or illicit drug use.[1, 3]</li>
-                <li><strong>Initial Labs and Imaging:</strong> Unless a readily reversible cause has been identified and corrected, blood should be drawn for emergent laboratory studies. This typically includes a comprehensive metabolic panel (electrolytes, renal and liver function), a complete blood count (CBC), coagulation studies, blood gas analysis, ammonia levels, and a urine toxicology screen. An emergent non-contrast head CT scan is also a standard part of the initial workup to rule out catastrophic structural or vascular causes like intracranial hemorrhage or large ischemic stroke.[1, 2]</li>
-            </ul>
-
-            <h2>Level of Consciousness and Arousal</h2>
-            <p>Once the patient is physiologically stable, the first step of the neurological examination is to formally assess and quantify their level of consciousness. This involves establishing a baseline level of arousal and determining the maximal level of arousal that can be achieved with stimulation. A structured approach ensures that the assessment is reproducible and can be communicated clearly to other members of the healthcare team. The synthesis of a standardized scoring system with a detailed descriptive assessment provides the most complete picture of the patient's condition.</p>
-
-            <h3>Glasgow Coma Scale (GCS): A Standardized Assessment</h3>
-            <p>The Glasgow Coma Scale (GCS) is the most widely used and validated tool for assessing the level of consciousness in patients with acute brain injury.[5] It provides a standardized, objective score based on three domains of responsiveness: eye-opening, verbal response, and motor response. The total score ranges from 3 (deeply comatose) to 15 (fully awake and oriented). Communicating the GCS score, including its individual components (e.g., E4V5M6), is a global standard.[6, 7]</p>
-            
-            <p><strong>Table 1: Glasgow Coma Scale (GCS) Scoring</strong></p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Category</th>
-                        <th>Response</th>
-                        <th>Score</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td rowspan="5"><strong>Best Eye Response (E)</strong></td>
-                        <td>Spontaneous—open with blinking at baseline</td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td>To sound/voice</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>To pressure/pain</td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td>None</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>Not Testable (e.g., severe orbital swelling)</td>
-                        <td>NT</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="6"><strong>Best Verbal Response (V)</strong></td>
-                        <td>Oriented</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>Confused</td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td>Words (inappropriate, random)</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>Sounds (incomprehensible, moaning)</td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td>None</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>Not Testable (e.g., intubated, tracheostomy)</td>
-                        <td>NT</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="7"><strong>Best Motor Response (M)</strong></td>
-                        <td>Obeys commands</td>
-                        <td>6</td>
-                    </tr>
-                    <tr>
-                        <td>Localizing to pain</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>Normal Flexion (withdrawal from pain)</td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td>Abnormal Flexion (decorticate posturing)</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>Extension (decerebrate posturing)</td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td>None</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>Not Testable (e.g., paralyzed, sedated)</td>
-                        <td>NT</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p class="note"><em>Source: Adapted from [5, 8, 9]</em></p>
-            
-            <ul>
-                <li><strong>GCS-Pupil (GCS-P) Score:</strong> For enhanced prognostic accuracy, particularly in traumatic brain injury, the GCS-P score can be calculated. The pupil reactivity score (PRS) is determined by the number of unreactive pupils (0, 1, or 2). The GCS-P is then calculated as GCS Score - PRS. A patient with a GCS of 7 and two unreactive pupils would have a GCS-P of 5, indicating a worse prognosis.[5]</li>
-            </ul>
-
-            <h3>Baseline and Maximal Arousal: The "How-To"</h3>
-            <p>The GCS provides the score, but a descriptive examination provides the essential details behind that score. The following systematic approach, derived from expert clinical practice, ensures that the best possible response is elicited for each GCS component.[4]</p>
-            <ul>
-                <li><strong>Observe Baseline Arousal (Before Stimulation):</strong> Before applying any stimulus, carefully observe the patient.
-                    <ul>
-                        <li>Are the eyes open spontaneously? (This corresponds to GCS E4).</li>
-                        <li>Are there any spontaneous movements? Are they purposeful (e.g., adjusting bedsheets) or non-purposeful (e.g., myoclonus)? (Purposeful movement may indicate GCS M6).</li>
-                        <li>Does the patient appear to fix their gaze on people or objects (regard) or follow them with their eyes (track)? This is a sign of higher cortical function.[4]</li>
-                        <li>Does the patient make any spontaneous sounds or attempt to speak? (This helps determine the baseline GCS V score).[4]</li>
-                    </ul>
-                </li>
-                <li><strong>Apply Graded Stimuli to Elicit Best Response:</strong> If the patient is not fully awake and responsive at baseline, apply stimuli in a stepwise, escalating fashion to determine their maximal level of arousal and best response.
-                    <ul>
-                        <li><strong>Progression of Stimulation:</strong>
-                            <ol>
-                                <li>Talk to the patient in a normal, conversational voice.</li>
-                                <li>Speak loudly or call their name.</li>
-                                <li>Yell their name directly into their ear.</li>
-                                <li>Gently shake them by the shoulders.</li>
-                                <li>Apply a light noxious stimulus.</li>
-                                <li>Apply an intense noxious stimulus.[4]</li>
-                            </ol>
-                        </li>
-                    </ul>
-                </li>
-                <li><strong>Guide to Applying Noxious Stimuli:</strong> The goal of a noxious stimulus is to elicit a motor response without causing tissue injury. The stimulus should be applied centrally first (to assess for posturing) and then peripherally to each limb (to assess for withdrawal or localization).
-                    <ul>
-                        <li><strong>Recommended Techniques:</strong>
+                            <h3>Assess and Stabilize: The ABCs</h3>
+                            <p>The first and most critical step is a rapid assessment and management of the patient's fundamental physiological status, commonly referred to as the ABCs (Airway, Breathing, Circulation). This must be performed immediately upon encountering an unresponsive patient.</p>
                             <ul>
-                                <li><strong>Nailbed Pressure:</strong> Apply firm pressure to the base of the patient's fingernail or toenail with a pen or other hard object.[2, 4]</li>
-                                <li><strong>Trapezius Squeeze:</strong> Grasp and twist the trapezius muscle between the neck and shoulder.[4, 10]</li>
-                                <li><strong>Supraorbital Ridge Pressure:</strong> Apply firm upward pressure on the supraorbital notch, located on the bony ridge above the eye.[4, 10]</li>
-                                <li><strong>Sternal Rub:</strong> Use knuckles to apply firm, grinding pressure to the sternum.</li>
+                                <li><strong>A - Airway:</strong> The patency of the airway must be assessed. An unresponsive patient is at high risk for airway obstruction from the tongue, secretions, or vomit. They often cannot protect their own airway, increasing the risk of aspiration. The decision to intubate should be considered early to secure a definitive airway, ensure adequate ventilation, and prevent aspiration.</li>
+                                <li><strong>B - Breathing:</strong> Once the airway is secured or deemed patent, the patient's respiratory status must be evaluated. This includes assessing the respiratory rate, the effort of breathing, and oxygen saturation via pulse oximetry. All unresponsive patients should receive supplemental oxygen, and those with inadequate respiratory effort or profound hypoxemia require mechanical ventilation.</li>
+                                <li><strong>C - Circulation:</strong> The initial priority is to verify adequate circulation. The examiner must immediately check for a pulse and measure blood pressure. Hypotension is a common cause of decreased cerebral perfusion and must be aggressively treated with intravenous fluids and vasopressors as needed. Secure and reliable intravenous (IV) access is essential for administering emergency medications and fluids.</li>
+                                <li><strong>C-Spine - Cervical Spine Precautions:</strong> In any patient where trauma is known or suspected, or if the history is unknown, the cervical spine must be presumed to be unstable and must be immobilized with a cervical collar. This precaution is paramount to prevent iatrogenic spinal cord injury. Failure to observe this rule can have catastrophic consequences. Importantly, the presence of a cervical collar will directly contraindicate certain parts of the subsequent neurological exam, specifically the oculocephalic maneuver.</li>
                             </ul>
-                        </li>
-                        <li><p class="warning"><strong>Critical Safety Warning:</strong> The application of noxious stimuli must be done with care. Never apply a stimulus to injured or bruised tissue. The sternal rub is strictly contraindicated in patients who have undergone a median sternotomy (e.g., for cardiac surgery) and have sternal wires in place.[4]</p></li>
-                    </ul>
-                </li>
-            </ul>
 
-            <h2>Detailed Neurological Examination: Brainstem and Cranial Nerves</h2>
-            <p>The core of the coma examination is the systematic assessment of brainstem reflexes. These reflexes test the integrity of the cranial nerves and their associated pathways within the midbrain, pons, and medulla. The presence, absence, or asymmetry of these reflexes allows the clinician to localize the level of neurological injury with remarkable precision. Each reflex should be tested methodically.</p>
-
-            <h3>Pupils (CN II - Afferent, CN III - Efferent)</h3>
-            <p>The pupillary light reflex is a powerful tool for assessing the function of the upper brainstem (midbrain).</p>
-            <ul>
-                <li><strong>Procedure:</strong>
-                    <ol>
-                        <li><strong>Observe Size, Shape, and Symmetry:</strong> The examination should take place in a dimly lit room to allow for better visualization. Note the baseline pupil size in millimeters for each eye, using a pupil gauge for accuracy. They should be round and roughly equal in size. A difference of up to 1 mm can be a normal variant (physiologic anisocoria).[2, 11]</li>
-                        <li><strong>Test Direct Light Reflex:</strong> Shine a bright penlight directly into one eye. Observe the speed and magnitude of constriction in that same eye. A normal response is brisk constriction.[4, 12]</li>
-                        <li><strong>Test Consensual Light Reflex:</strong> Shine the light into the same eye again, but this time, focus your observation on the <em>opposite</em> pupil. It should constrict simultaneously and to a similar degree as the direct response.[13, 14]</li>
-                        <li><strong>Repeat</strong> the direct and consensual testing on the other eye.</li>
-                        <li><strong>Swinging Flashlight Test:</strong> This test is specifically designed to detect a relative afferent pupillary defect (RAPD), also known as a Marcus Gunn pupil. In a dim room, swing the light beam smoothly from one eye to the other, holding it on each eye for about 3 seconds. In a normal patient, both pupils will remain constricted. A positive RAPD is identified when the light is swung from the normal eye to the affected eye, and the affected pupil paradoxically <em>dilates</em> instead of constricting further. This indicates a lesion in the afferent pathway (the optic nerve or severe retinal disease) on that side.[15, 16]</li>
-                    </ol>
-                </li>
-                <li><strong>Pupillary Findings and Localization:</strong> The pattern of pupillary abnormalities is highly valuable for localization.</li>
-            </ul>
-            
-            <p><strong>Table 2: Pupillary Findings and Localization</strong></p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Finding</th>
-                        <th>Description</th>
-                        <th>Potential Localization / Cause</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Unilateral Dilated, Fixed Pupil</strong></td>
-                        <td>One pupil is large and does not react to direct or consensual light.</td>
-                        <td>Ipsilateral CN III compression (e.g., uncal herniation, posterior communicating artery aneurysm).[2, 17]</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Bilateral Dilated, Fixed Pupils</strong></td>
-                        <td>Both pupils are large (>6mm) and unreactive.</td>
-                        <td>Severe brain anoxia, brain death, anticholinergic drug effect, deep hypothermia.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Pinpoint Pupils</strong></td>
-                        <td>Both pupils are very small (<2mm) but may still be reactive to bright light.</td>
-                        <td>Pontine hemorrhage, opioid/narcotic toxidrome.[2]</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Mid-position, Fixed Pupils</strong></td>
-                        <td>Both pupils are 4-5mm and unreactive.</td>
-                        <td>Severe midbrain damage.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Positive RAPD / Marcus Gunn Pupil</strong></td>
-                        <td>Affected pupil dilates when light is swung from the normal eye to it.</td>
-                        <td>Lesion of the afferent pathway (CN II, optic nerve) or severe retinal disease.[15]</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h3>Ocular Motility (CN III, IV, VI - Efferent, CN VIII - Afferent)</h3>
-            <p>Assessing spontaneous and reflexive eye movements tests a complex interplay between the vestibular system and the cranial nerves controlling eye movement, providing a window into the function of the pons and midbrain.</p>
-            <ul>
-                <li><strong>Spontaneous Gaze:</strong> First, observe the resting position of the eyes. A persistent, conjugate deviation of the eyes to one side can be a powerful localizing sign. In a destructive hemispheric lesion (like a large stroke), the eyes often look <em>toward</em> the side of the lesion. In a destructive pontine lesion, the eyes look <em>away</em> from the lesion. In the setting of a seizure, the eyes may be driven away from the seizure focus.[2, 6]</li>
-                <li><strong>Oculocephalic Reflex (Doll's Eyes):</strong> This maneuver tests the vestibulo-ocular reflex (VOR).
-                    <ul>
-                        <li><p class="warning"><strong>CRITICAL WARNING:</strong> This test is <strong>ABSOLUTELY CONTRAINDICATED</strong> if there is any suspicion of cervical spine instability or if the patient is in a cervical collar. Performing this maneuver on a patient with an unstable C-spine can cause quadriplegia or death.[4, 6]</p></li>
-                        <li><strong>Technique:</strong> Hold the patient's eyelids open. Briskly but gently turn the head from side to side. Then, flex and extend the neck.</li>
-                        <li><strong>Interpretation:</strong> An intact brainstem reflex (a "positive" Doll's eyes response) is present when the eyes move conjugately in the <em>opposite</em> direction of the head turn, as if they are remaining fixed on a point in space. An absent or abnormal response, where the eyes remain fixed in the orbits and move with the head, indicates brainstem dysfunction.[4, 6] The reflex pathway involves CN VIII afferents carrying information about head movement to the vestibular nuclei in the pons, which then project to the nuclei of CN III and VI via the medial longitudinal fasciculus (MLF) to coordinate eye movement.[4]</li>
-                    </ul>
-                </li>
-                <li><strong>Oculovestibular Reflex (Cold Calorics):</strong> This is a more potent stimulus for the VOR and is performed when the oculocephalic reflex is absent, equivocal, or contraindicated.
-                    <ul>
-                        <li><p class="warning"><strong>CRITICAL WARNING:</strong> <strong>NEVER</strong> perform this test on an awake or conscious patient, as it induces extreme vertigo, nausea, and vomiting. Before proceeding, ensure the external ear canal is clear and the tympanic membrane is intact.[4, 6]</p></li>
-                        <li><strong>Technique:</strong>
-                            <ol>
-                                <li>Elevate the head of the bed to 30 degrees. This orients the horizontal semicircular canal into a vertical plane, maximizing the response to the thermal stimulus.[4, 10]</li>
-                                <li>Using a large syringe (e.g., 50-60cc) with a soft catheter tip, slowly irrigate one ear canal with ice-cold water.</li>
-                            </ol>
-                        </li>
-                        <li><strong>Interpretation in the Comatose Patient:</strong>
+                            <h3>Check for and Treat Readily Reversible Causes</h3>
+                            <p>Concurrently with stabilization, the clinician must rapidly screen for and treat common and easily reversible causes of coma. These interventions can be life-saving and may obviate the need for a more extensive workup.</p>
                             <ul>
-                                <li><strong>Intact Brainstem:</strong> A normal response is a slow, tonic deviation of both eyes <em>toward</em> the ear being irrigated with cold water.</li>
-                                <li><strong>Brainstem Lesion:</strong> No eye movement, or a dysconjugate movement (e.g., only one eye abducts), indicates a brainstem lesion. No response at all is a grave sign consistent with severe brainstem injury or brain death.[4]</li>
-                                <li>The mnemonic COWS (Cold-Opposite, Warm-Same) refers to the fast phase of nystagmus seen in an <em>awake</em> patient and does not apply to the comatose patient, who lacks the fast corrective phase.</li>
+                                <li><strong>Hypoglycemia:</strong> Severe hypoglycemia is a frequent cause of altered mental status and coma.
+                                    <ul>
+                                        <li><strong>Action:</strong> An immediate point-of-care (finger-stick) glucose test must be performed on every unresponsive patient.</li>
+                                        <li><strong>Treatment:</strong> If the blood glucose is low (e.g., < 70 mg/dL), 25 to 50 mL of 50% dextrose (D50) should be administered intravenously.</li>
+                                        <li><strong class="pearl">Clinical Pearl:</strong> In patients at risk for nutritional deficiency and Wernicke's encephalopathy (e.g., those with a history of alcohol use disorder, malnutrition, or bariatric surgery), 100 mg of thiamine must be administered intravenously before or concurrently with dextrose. Giving dextrose alone in a thiamine-deficient state can precipitate acute Wernicke's encephalopathy.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Toxidromes:</strong> Toxic ingestions are another common cause of coma.
+                                    <ul>
+                                        <li><strong>Opioid Overdose:</strong> The clinical triad of coma, respiratory depression, and pinpoint (miotic) pupils is highly suggestive of an opioid toxidrome.</li>
+                                        <li><strong>Action:</strong> If opioid overdose is suspected based on clinical signs or history, naloxone should be administered intravenously or intramuscularly. The dose may need to be repeated, as the duration of action of many opioids exceeds that of naloxone.</li>
+                                        <li><strong>Benzodiazepine Overdose:</strong> While benzodiazepines can cause stupor and coma, they rarely cause severe respiratory depression unless co-ingested with other sedatives like alcohol or opioids. The reversal agent, flumazenil, should be used with extreme caution, as it can precipitate withdrawal seizures in patients with chronic benzodiazepine dependence or lower the seizure threshold in patients with a history of seizures or co-ingestion of a pro-convulsant substance. Its routine use is generally discouraged.</li>
+                                    </ul>
+                                </li>
                             </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
 
-            <h3>Facial Sensation and Motor (CN V - Afferent, CN VII - Efferent)</h3>
-            <p>These reflexes test the integrity of the pons.</p>
-            <ul>
-                <li><strong>Corneal Reflex:</strong>
-                    <ul>
-                        <li><strong>Technique (Safety First):</strong> The goal is to elicit a blink while minimizing the risk of corneal abrasion, especially in patients who may require repeated exams. The safest initial approach is to drop a few drops of sterile saline or artificial tears onto the cornea. If this fails to elicit a response, gently touch the lateral aspect of the cornea (not the sclera) with the tip of a sterile cotton swab or a wisp of cotton.[2, 4]</li>
-                        <li><strong>Interpretation:</strong> A normal response is a brisk, bilateral blink. The afferent limb is CN V, and the efferent limb is CN VII. An absent reflex implies a lesion in the pons or in one of these nerves.</li>
-                    </ul>
-                </li>
-                <li><strong>Eyelash Stimulation:</strong> A less noxious and safer alternative is to gently stroke the eyelashes, which should also elicit a blink via the same reflex arc.[4]</li>
-                <li><strong>Grimace to Pain:</strong> When applying a noxious stimulus like a trapezius squeeze or supraorbital pressure, observe the patient's face for a grimace. Asymmetry in the facial movement can indicate a peripheral CN VII lesion or a contralateral motor pathway injury.[2]</li>
-            </ul>
+                            <h3>Essential Preliminaries for the Neurological Exam</h3>
+                            <p>Before beginning the formal neurological examination, several key pieces of information must be gathered and recorded. These data provide the essential context needed to interpret the subsequent findings accurately.</p>
+                            <ul>
+                                <li><strong>Record Sedation:</strong> This is a non-negotiable prerequisite for any meaningful neurological assessment. The type, dose, and time of last administration of all sedative and analgesic medications must be documented. It is impossible to interpret a patient's level of arousal or motor responses without knowing if they are under the influence of drugs like propofol, benzodiazepines, or opioids. The exam should ideally be performed after a "sedation holiday," where infusions are held for a period to allow for drug clearance. A proper record would state, for example: "Patient was on a propofol infusion at 1.5 mg/min that was stopped 20 minutes before the exam".</li>
+                                <li><strong>Gather History:</strong> While stabilization is underway, any available history should be obtained from emergency medical services (EMS), family members, friends, or other witnesses. Key information includes the time the patient was last seen well, the circumstances in which they were found, their past medical and surgical history, a complete list of medications, and any history of alcohol or illicit drug use.</li>
+                                <li><strong>Initial Labs and Imaging:</strong> Unless a readily reversible cause has been identified and corrected, blood should be drawn for emergent laboratory studies. This typically includes a comprehensive metabolic panel (electrolytes, renal and liver function), a complete blood count (CBC), coagulation studies, blood gas analysis, ammonia levels, and a urine toxicology screen. An emergent non-contrast head CT scan is also a standard part of the initial workup to rule out catastrophic structural or vascular causes like intracranial hemorrhage or large ischemic stroke.</li>
+                            </ul>
+                        </div>
+                    </div>
 
-            <h3>Lower Cranial Nerves (CN IX, X)</h3>
-            <p>These reflexes assess the function of the lower brainstem (medulla).</p>
-            <ul>
-                <li><strong>Gag Reflex:</strong>
-                    <ul>
-                        <li><strong>Technique:</strong> Stimulate the posterior pharynx on each side with a tongue depressor or a suction catheter (Yankauer tip, with the suction turned OFF).[2, 4]</li>
-                        <li><strong>Observation in Intubated Patients:</strong> In an intubated patient, it can be very difficult to visualize the pharynx or hear a gag. A useful surrogate is to watch and feel for the elevation of the thyroid cartilage (Adam's apple), which indicates a motor response.[4]</li>
-                        <li><strong class="note">Clinical Note:</strong> The gag reflex is notoriously unreliable. It can be absent in a significant portion of the healthy population and is often suppressed in patients who are chronically intubated. Its presence is reassuring, but its absence in isolation is not a definitive sign of brainstem pathology.[6]</li>
-                    </ul>
-                </li>
-                <li><strong>Cough Reflex:</strong>
-                    <ul>
-                        <li><strong>Technique (Intubated Patients Only):</strong> This is a more reliable test of lower brainstem function in the ventilated patient. Advance an in-line tracheal suction catheter through the endotracheal tube until it passes the distal end and stimulates the carina.[2, 4]</li>
-                        <li><strong>Interpretation:</strong> A robust cough in response to tracheal stimulation is a strong indicator of intact lower brainstem function. The afferent pathway involves sensory nerves to the upper thoracic spinal cord, and the efferent pathway involves motor output to the respiratory and abdominal muscles.[4]</li>
-                    </ul>
-                </li>
-            </ul>
-            
-            <p><strong>Table 3: Cranial Nerve Reflex Summary</strong></p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Reflex</th>
-                        <th>Brief Method</th>
-                        <th>Afferent CN</th>
-                        <th>Efferent CN</th>
-                        <th>Brainstem Level</th>
-                        <th>Interpretation of Abnormal</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Pupillary Light</strong></td>
-                        <td>Shine light in eye</td>
-                        <td>II (Optic)</td>
-                        <td>III (Oculomotor)</td>
-                        <td>Midbrain</td>
-                        <td>Indicates midbrain or CN II/III lesion.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Oculocephalic</strong></td>
-                        <td>Turn head briskly</td>
-                        <td>VIII (Vestibular)</td>
-                        <td>III, VI (Abducens)</td>
-                        <td>Pons/Midbrain</td>
-                        <td>Eyes move with head; indicates brainstem lesion.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Oculovestibular</strong></td>
-                        <td>Irrigate ear with ice water</td>
-                        <td>VIII (Vestibular)</td>
-                        <td>III, VI (Abducens)</td>
-                        <td>Pons/Midbrain</td>
-                        <td>No eye deviation; indicates brainstem lesion.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Corneal</strong></td>
-                        <td>Touch cornea with saline/swab</td>
-                        <td>V (Trigeminal)</td>
-                        <td>VII (Facial)</td>
-                        <td>Pons</td>
-                        <td>No blink; indicates pontine or CN V/VII lesion.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Gag</strong></td>
-                        <td>Stimulate posterior pharynx</td>
-                        <td>IX (Glossopharyngeal)</td>
-                        <td>X (Vagus)</td>
-                        <td>Medulla</td>
-                        <td>No gag; may indicate medullary lesion (less reliable).</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Cough</strong></td>
-                        <td>Suction trachea past ETT</td>
-                        <td>Vagal Afferents</td>
-                        <td>X, Spinal Nerves</td>
-                        <td>Medulla</td>
-                        <td>No cough; indicates severe lower brainstem dysfunction.</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p class="note"><em>Source: Compiled from [2, 4, 6]</em></p>
+                    <div class="card">
+                        <div class="card-header icon-header">
+                            <i class="fas fa-brain"></i>
+                            <h2>Level of Consciousness and Arousal</h2>
+                        </div>
+                        <div class="card-body">
+                            <p>Once the patient is physiologically stable, the first step of the neurological examination is to formally assess and quantify their level of consciousness. This involves establishing a baseline level of arousal and determining the maximal level of arousal that can be achieved with stimulation. A structured approach ensures that the assessment is reproducible and can be communicated clearly to other members of the healthcare team. The synthesis of a standardized scoring system with a detailed descriptive assessment provides the most complete picture of the patient's condition.</p>
 
-            <h2>Motor Examination: Purposeful vs. Posturing</h2>
-            <p>The motor examination is a critical component for both localizing the injury and determining the GCS score. The key is to differentiate meaningful, purposeful movements from stereotyped, reflexive posturing. The best motor response from any limb determines the score.</p>
+                            <h3>Baseline and Maximal Arousal: The "How-To"</h3>
+                            <p>The GCS provides the score, but a descriptive examination provides the essential details behind that score. The following systematic approach, derived from expert clinical practice, ensures that the best possible response is elicited for each GCS component.</p>
+                            <ul>
+                                <li><strong>Observe Baseline Arousal (Before Stimulation):</strong> Before applying any stimulus, carefully observe the patient.
+                                    <ul>
+                                        <li>Are the eyes open spontaneously? (This corresponds to GCS E4).</li>
+                                        <li>Are there any spontaneous movements? Are they purposeful (e.g., adjusting bedsheets) or non-purposeful (e.g., myoclonus)? (Purposeful movement may indicate GCS M6).</li>
+                                        <li>Does the patient appear to fix their gaze on people or objects (regard) or follow them with their eyes (track)? This is a sign of higher cortical function.</li>
+                                        <li>Does the patient make any spontaneous sounds or attempt to speak? (This helps determine the baseline GCS V score).</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Apply Graded Stimuli to Elicit Best Response:</strong> If the patient is not fully awake and responsive at baseline, apply stimuli in a stepwise, escalating fashion to determine their maximal level of arousal and best response.
+                                    <ul>
+                                        <li><strong>Progression of Stimulation:</strong>
+                                            <ol>
+                                                <li>Talk to the patient in a normal, conversational voice.</li>
+                                                <li>Speak loudly or call their name.</li>
+                                                <li>Yell their name directly into their ear.</li>
+                                                <li>Gently shake them by the shoulders.</li>
+                                                <li>Apply a light noxious stimulus.</li>
+                                                <li>Apply an intense noxious stimulus.</li>
+                                            </ol>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><strong>Guide to Applying Noxious Stimuli:</strong> The goal of a noxious stimulus is to elicit a motor response without causing tissue injury. The stimulus should be applied centrally first (to assess for posturing) and then peripherally to each limb (to assess for withdrawal or localization).
+                                    <ul>
+                                        <li><strong>Recommended Techniques:</strong>
+                                            <ul>
+                                                <li><strong>Nailbed Pressure:</strong> Apply firm pressure to the base of the patient's fingernail or toenail with a pen or other hard object.</li>
+                                                <li><strong>Trapezius Squeeze:</strong> Grasp and twist the trapezius muscle between the neck and shoulder.</li>
+                                                <li><strong>Supraorbital Ridge Pressure:</strong> Apply firm upward pressure on the supraorbital notch, located on the bony ridge above the eye.</li>
+                                                <li><strong>Sternal Rub:</strong> Use knuckles to apply firm, grinding pressure to the sternum.</li>
+                                            </ul>
+                                        </li>
+                                        <li><p class="warning"><strong>Critical Safety Warning:</strong> The application of noxious stimuli must be done with care. Never apply a stimulus to injured or bruised tissue. The sternal rub is strictly contraindicated in patients who have undergone a median sternotomy (e.g., for cardiac surgery) and have sternal wires in place.</p></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
-            <h3>Assessing Motor Response</h3>
-            <p>The assessment requires applying a central stimulus (like a trapezius squeeze or supraorbital pressure) to assess for symmetrical responses and posturing, and a peripheral stimulus (nailbed pressure) to each of the four limbs to test for localization or withdrawal.[2] It is essential to document whether the responses are symmetric or asymmetric, as asymmetry strongly points to a focal lesion like a stroke or unilateral injury.[2]</p>
+                    <div class="card">
+                        <div class="card-header icon-header">
+                            <i class="fas fa-eye"></i>
+                            <h2>Detailed Neurological Examination: Brainstem and Cranial Nerves</h2>
+                        </div>
+                        <div class="card-body">
+                            <p>The core of the coma examination is the systematic assessment of brainstem reflexes. These reflexes test the integrity of the cranial nerves and their associated pathways within the midbrain, pons, and medulla. The presence, absence, or asymmetry of these reflexes allows the clinician to localize the level of neurological injury with remarkable precision. Each reflex should be tested methodically.</p>
 
-            <h3>Interpreting the Response (from Best to Worst)</h3>
-            <p>The responses are graded according to the GCS motor scale, from highest to lowest function.</p>
-            <ul>
-                <li><strong>Obeys Commands (GCS M6):</strong> This is the highest level of motor function. If the patient can be aroused to follow any verbal command, this is their score. Commands should be simple, such as "stick out your tongue," "blink your eyes," or "show me two fingers".[8]
-                    <ul>
-                        <li><strong class="pearl">Clinical Pearl:</strong> It is imperative to ensure the patient is responding to the verbal command itself and not simply mimicking a visual cue. For instance, if asking for a "thumbs up," the examiner should not simultaneously make the gesture. Testing with the patient's eyes closed can help eliminate this confounder.[4]</li>
-                    </ul>
-                </li>
-                <li><strong>Localizes to Pain (GCS M5):</strong> This is a purposeful movement where the patient's hand moves toward and attempts to remove the source of a central noxious stimulus. A classic example is the hand crossing the midline to push away the examiner's hand during a trapezius squeeze.[4, 8]</li>
-                <li><strong>Withdrawal / Normal Flexion (GCS M4):</strong> This is a rapid, non-stereotyped flexion of a limb to pull away from a peripheral noxious stimulus (e.g., nailbed pressure). The limb flexes briskly at the elbow or knee to retreat from the pain.[4, 8]</li>
-                <li><strong>Abnormal Flexion / Decorticate Posturing (GCS M3):</strong> This is a stereotyped, reflexive response to a stimulus. It is characterized by adduction of the arms, flexion of the elbows and wrists over the chest, and extension and internal rotation of the legs. This posture indicates severe damage to the cerebral hemispheres or thalamus, with a lesion <em>above</em> the level of the red nucleus in the midbrain.[2, 4]</li>
-                <li><strong>Extension / Decerebrate Posturing (GCS M2):</strong> This is also a stereotyped, reflexive response and is a more ominous sign than decorticate posturing. It involves adduction and extension of the arms at the elbows, pronation of the forearms, and flexion of the wrists and fingers. The legs remain extended. This posture indicates a severe lesion in the brainstem <em>at or below</em> the level of the red nucleus.[2, 4]</li>
-                <li><strong>No Response (GCS M1):</strong> There is no motor response to any stimulus, indicating the most severe level of injury.</li>
-            </ul>
+                            <h3>Pupils (CN II - Afferent, CN III - Efferent)</h3>
+                            <p>The pupillary light reflex is a powerful tool for assessing the function of the upper brainstem (midbrain).</p>
+                            <ul>
+                                <li><strong>Procedure:</strong>
+                                    <ol>
+                                        <li><strong>Observe Size, Shape, and Symmetry:</strong> The examination should take place in a dimly lit room to allow for better visualization. Note the baseline pupil size in millimeters for each eye, using a pupil gauge for accuracy. They should be round and roughly equal in size. A difference of up to 1 mm can be a normal variant (physiologic anisocoria).</li>
+                                        <li><strong>Test Direct Light Reflex:</strong> Shine a bright penlight directly into one eye. Observe the speed and magnitude of constriction in that same eye. A normal response is brisk constriction.</li>
+                                        <li><strong>Test Consensual Light Reflex:</strong> Shine the light into the same eye again, but this time, focus your observation on the <em>opposite</em> pupil. It should constrict simultaneously and to a similar degree as the direct response.</li>
+                                        <li><strong>Repeat</strong> the direct and consensual testing on the other eye.</li>
+                                        <li><strong>Swinging Flashlight Test:</strong> This test is specifically designed to detect a relative afferent pupillary defect (RAPD), also known as a Marcus Gunn pupil. In a dim room, swing the light beam smoothly from one eye to the other, holding it on each eye for about 3 seconds. In a normal patient, both pupils will remain constricted. A positive RAPD is identified when the light is swung from the normal eye to the affected eye, and the affected pupil paradoxically <em>dilates</em> instead of constricting further. This indicates a lesion in the afferent pathway (the optic nerve or severe retinal disease) on that side.</li>
+                                    </ol>
+                                </li>
+                                <li><strong>Pupillary Findings and Localization:</strong> The pattern of pupillary abnormalities is highly valuable for localization.</li>
+                            </ul>
+                            
+                            <p><strong>Table 2: Pupillary Findings and Localization</strong></p>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Finding</th>
+                                        <th>Description</th>
+                                        <th>Potential Localization / Cause</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Unilateral Dilated, Fixed Pupil</strong></td>
+                                        <td>One pupil is large and does not react to direct or consensual light.</td>
+                                        <td>Ipsilateral CN III compression (e.g., uncal herniation, posterior communicating artery aneurysm).</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Bilateral Dilated, Fixed Pupils</strong></td>
+                                        <td>Both pupils are large (>6mm) and unreactive.</td>
+                                        <td>Severe brain anoxia, brain death, anticholinergic drug effect, deep hypothermia.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Pinpoint Pupils</strong></td>
+                                        <td>Both pupils are very small (<2mm) but may still be reactive to bright light.</td>
+                                        <td>Pontine hemorrhage, opioid/narcotic toxidrome.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Mid-position, Fixed Pupils</strong></td>
+                                        <td>Both pupils are 4-5mm and unreactive.</td>
+                                        <td>Severe midbrain damage.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Positive RAPD / Marcus Gunn Pupil</strong></td>
+                                        <td>Affected pupil dilates when light is swung from the normal eye to it.</td>
+                                        <td>Lesion of the afferent pathway (CN II, optic nerve) or severe retinal disease.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
 
-            <h3>High-Yield Clinical Trick: Differentiating Withdrawal (M4) from Posturing (M3/M2)</h3>
-            <p>The distinction between purposeful withdrawal (M4) and stereotyped flexion (M3) is a common point of confusion and a source of inter-rater variability in GCS scoring. The following maneuver, based on a key clinical principle, can help make this distinction more objective.[4]</p>
-            <ul>
-                <li><strong>Underlying Principle:</strong> Purposeful movements are designed to move away from a threat; therefore, they almost never move <em>into</em> a noxious stimulus. Stereotyped posturing is a fixed motor program that is triggered regardless of the stimulus location.[4]</li>
-                <li><strong>To Differentiate Flexor Posturing (M3) from Withdrawal (M4):</strong>
-                    <ol>
-                        <li>Position the patient's arm in abduction (away from the body).</li>
-                        <li>Apply a firm pinch to the <em>radial</em> (thumb) side of the forearm.</li>
-                        <li><strong>Interpretation:</strong> A purposeful withdrawal (M4) will involve pulling the arm further away from the stimulus. A stereotyped flexor posture (M3) will cause the arm to adduct and flex <em>into</em> or across the stimulus, a non-purposeful movement.</li>
-                    </ol>
-                </li>
-                <li><strong>To Differentiate Extensor Posturing (M2) from Withdrawal (M4):</strong>
-                    <ol>
-                        <li>Position the patient's arm flexed at the elbow.</li>
-                        <li>Apply a firm pinch to the <em>ulnar</em> (pinky) side of the forearm.</li>
-                        <li><strong>Interpretation:</strong> A purposeful withdrawal (M4) will not cause extension. A stereotyped extensor posture (M2) will cause the arm to pathologically extend <em>into</em> the stimulus.</li>
-                    </ol>
-                </li>
-            </ul>
+                            <h3>Ocular Motility (CN III, IV, VI - Efferent, CN VIII - Afferent)</h3>
+                            <p>Assessing spontaneous and reflexive eye movements tests a complex interplay between the vestibular system and the cranial nerves controlling eye movement, providing a window into the function of the pons and midbrain.</p>
+                            <ul>
+                                <li><strong>Spontaneous Gaze:</strong> First, observe the resting position of the eyes. A persistent, conjugate deviation of the eyes to one side can be a powerful localizing sign. In a destructive hemispheric lesion (like a large stroke), the eyes often look <em>toward</em> the side of the lesion. In a destructive pontine lesion, the eyes look <em>away</em> from the lesion. In the setting of a seizure, the eyes may be driven away from the seizure focus.</li>
+                                <li><strong>Oculocephalic Reflex (Doll's Eyes):</strong> This maneuver tests the vestibulo-ocular reflex (VOR).
+                                    <ul>
+                                        <li><p class="warning"><strong>CRITICAL WARNING:</strong> This test is <strong>ABSOLUTELY CONTRAINDICATED</strong> if there is any suspicion of cervical spine instability or if the patient is in a cervical collar. Performing this maneuver on a patient with an unstable C-spine can cause quadriplegia or death.</p></li>
+                                        <li><strong>Technique:</strong> Hold the patient's eyelids open. Briskly but gently turn the head from side to side. Then, flex and extend the neck.</li>
+                                        <li><strong>Interpretation:</strong> An intact brainstem reflex (a "positive" Doll's eyes response) is present when the eyes move conjugately in the <em>opposite</em> direction of the head turn, as if they are remaining fixed on a point in space. An absent or abnormal response, where the eyes remain fixed in the orbits and move with the head, indicates brainstem dysfunction. The reflex pathway involves CN VIII afferents carrying information about head movement to the vestibular nuclei in the pons, which then project to the nuclei of CN III and VI via the medial longitudinal fasciculus (MLF) to coordinate eye movement.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Oculovestibular Reflex (Cold Calorics):</strong> This is a more potent stimulus for the VOR and is performed when the oculocephalic reflex is absent, equivocal, or contraindicated.
+                                    <ul>
+                                        <li><p class="warning"><strong>CRITICAL WARNING:</strong> <strong>NEVER</strong> perform this test on an awake or conscious patient, as it induces extreme vertigo, nausea, and vomiting. Before proceeding, ensure the external ear canal is clear and the tympanic membrane is intact.</p></li>
+                                        <li><strong>Technique:</strong>
+                                            <ol>
+                                                <li>Elevate the head of the bed to 30 degrees. This orients the horizontal semicircular canal into a vertical plane, maximizing the response to the thermal stimulus.</li>
+                                                <li>Using a large syringe (e.g., 50-60cc) with a soft catheter tip, slowly irrigate one ear canal with ice-cold water.</li>
+                                            </ol>
+                                        </li>
+                                        <li><strong>Interpretation in the Comatose Patient:</strong>
+                                            <ul>
+                                                <li><strong>Intact Brainstem:</strong> A normal response is a slow, tonic deviation of both eyes <em>toward</em> the ear being irrigated with cold water.</li>
+                                                <li><strong>Brainstem Lesion:</strong> No eye movement, or a dysconjugate movement (e.g., only one eye abducts), indicates a brainstem lesion. No response at all is a grave sign consistent with severe brainstem injury or brain death.</li>
+                                                <li>The mnemonic COWS (Cold-Opposite, Warm-Same) refers to the fast phase of nystagmus seen in an <em>awake</em> patient and does not apply to the comatose patient, who lacks the fast corrective phase.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
 
-            <h3>Leg Responses</h3>
-            <ul>
-                <li><strong>Triple Flexion:</strong> When a noxious stimulus is applied to the foot or leg, a common reflexive response is "triple flexion"—simultaneous flexion at the ankle, knee, and hip. This is a stereotyped spinal reflex, not a purposeful withdrawal, and should not be scored as M4. It can be seen even in patients with severe brain injury or brain death if the spinal cord is intact.[4]</li>
-            </ul>
+                            <h3>Facial Sensation and Motor (CN V - Afferent, CN VII - Efferent)</h3>
+                            <p>These reflexes test the integrity of the pons.</p>
+                            <ul>
+                                <li><strong>Corneal Reflex:</strong>
+                                    <ul>
+                                        <li><strong>Technique (Safety First):</strong> The goal is to elicit a blink while minimizing the risk of corneal abrasion, especially in patients who may require repeated exams. The safest initial approach is to drop a few drops of sterile saline or artificial tears onto the cornea. If this fails to elicit a response, gently touch the lateral aspect of the cornea (not the sclera) with the tip of a sterile cotton swab or a wisp of cotton.</li>
+                                        <li><strong>Interpretation:</strong> A normal response is a brisk, bilateral blink. The afferent limb is CN V, and the efferent limb is CN VII. An absent reflex implies a lesion in the pons or in one of these nerves.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Eyelash Stimulation:</strong> A less noxious and safer alternative is to gently stroke the eyelashes, which should also elicit a blink via the same reflex arc.</li>
+                                <li><strong>Grimace to Pain:</strong> When applying a noxious stimulus like a trapezius squeeze or supraorbital pressure, observe the patient's face for a grimace. Asymmetry in the facial movement can indicate a peripheral CN VII lesion or a contralateral motor pathway injury.</li>
+                            </ul>
 
-            <h2>Additional Diagnostic Clues</h2>
-            <p>Beyond the core examination for localization, other physical findings can provide crucial clues to the underlying etiology of the coma. These signs help the clinician move from asking "where is the lesion?" to "what is the lesion?".</p>
+                            <h3>Lower Cranial Nerves (CN IX, X)</h3>
+                            <p>These reflexes assess the function of the lower brainstem (medulla).</p>
+                            <ul>
+                                <li><strong>Gag Reflex:</strong>
+                                    <ul>
+                                        <li><strong>Technique:</strong> Stimulate the posterior pharynx on each side with a tongue depressor or a suction catheter (Yankauer tip, with the suction turned OFF).</li>
+                                        <li><strong>Observation in Intubated Patients:</strong> In an intubated patient, it can be very difficult to visualize the pharynx or hear a gag. A useful surrogate is to watch and feel for the elevation of the thyroid cartilage (Adam's apple), which indicates a motor response.</li>
+                                        <li><strong class="note">Clinical Note:</strong> The gag reflex is notoriously unreliable. It can be absent in a significant portion of the healthy population and is often suppressed in patients who are chronically intubated. Its presence is reassuring, but its absence in isolation is not a definitive sign of brainstem pathology.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Cough Reflex:</strong>
+                                    <ul>
+                                        <li><strong>Technique (Intubated Patients Only):</strong> This is a more reliable test of lower brainstem function in the ventilated patient. Advance an in-line tracheal suction catheter through the endotracheal tube until it passes the distal end and stimulates the carina.</li>
+                                        <li><strong>Interpretation:</strong> A robust cough in response to tracheal stimulation is a strong indicator of intact lower brainstem function. The afferent pathway involves sensory nerves to the upper thoracic spinal cord, and the efferent pathway involves motor output to the respiratory and abdominal muscles.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            
+                            <p><strong>Table 3: Cranial Nerve Reflex Summary</strong></p>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Reflex</th>
+                                        <th>Brief Method</th>
+                                        <th>Afferent CN</th>
+                                        <th>Efferent CN</th>
+                                        <th>Brainstem Level</th>
+                                        <th>Interpretation of Abnormal</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Pupillary Light</strong></td>
+                                        <td>Shine light in eye</td>
+                                        <td>II (Optic)</td>
+                                        <td>III (Oculomotor)</td>
+                                        <td>Midbrain</td>
+                                        <td>Indicates midbrain or CN II/III lesion.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Oculocephalic</strong></td>
+                                        <td>Turn head briskly</td>
+                                        <td>VIII (Vestibular)</td>
+                                        <td>III, VI (Abducens)</td>
+                                        <td>Pons/Midbrain</td>
+                                        <td>Eyes move with head; indicates brainstem lesion.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Oculovestibular</strong></td>
+                                        <td>Irrigate ear with ice water</td>
+                                        <td>VIII (Vestibular)</td>
+                                        <td>III, VI (Abducens)</td>
+                                        <td>Pons/Midbrain</td>
+                                        <td>No eye deviation; indicates brainstem lesion.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Corneal</strong></td>
+                                        <td>Touch cornea with saline/swab</td>
+                                        <td>V (Trigeminal)</td>
+                                        <td>VII (Facial)</td>
+                                        <td>Pons</td>
+                                        <td>No blink; indicates pontine or CN V/VII lesion.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Gag</strong></td>
+                                        <td>Stimulate posterior pharynx</td>
+                                        <td>IX (Glossopharyngeal)</td>
+                                        <td>X (Vagus)</td>
+                                        <td>Medulla</td>
+                                        <td>No gag; may indicate medullary lesion (less reliable).</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Cough</strong></td>
+                                        <td>Suction trachea past ETT</td>
+                                        <td>Vagal Afferents</td>
+                                        <td>X, Spinal Nerves</td>
+                                        <td>Medulla</td>
+                                        <td>No cough; indicates severe lower brainstem dysfunction.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
 
-            <h3>Frontal Release Reflexes</h3>
-            <p>These are primitive reflexes that are normally suppressed by the frontal lobes in a healthy adult. Their re-emergence ("release") suggests diffuse brain dysfunction, such as in a metabolic encephalopathy, or focal frontal lobe pathology, and they can also be seen in advanced dementia.[4]</p>
-            <ul>
-                <li><strong>Glabellar Reflex:</strong> Repetitive tapping on the glabella (the area between the eyebrows) causes persistent, unabated blinking. A normal response is to stop blinking after the first few taps.</li>
-                <li><strong>Snout Reflex:</strong> Tapping on the closed lips or the philtrum causes a puckering or pursing of the lips.</li>
-                <li><strong>Rooting Reflex:</strong> Stroking the corner of the mouth causes the patient to turn their head and move their mouth toward the stimulus.</li>
-                <li><strong>Palmomental Reflex:</strong> Firmly stroking the thenar eminence of the palm causes a brief, reflexive contraction of the ipsilateral mentalis muscle, visible as a twitch or dimpling of the chin.[4]</li>
-            </ul>
+                    <div class="card">
+                        <div class="card-header icon-header">
+                            <i class="fas fa-hand-paper"></i>
+                            <h2>Motor Examination: Purposeful vs. Posturing</h2>
+                        </div>
+                        <div class="card-body">
+                            <p>The motor examination is a critical component for both localizing the injury and determining the GCS score. The key is to differentiate meaningful, purposeful movements from stereotyped, reflexive posturing. The best motor response from any limb determines the score.</p>
 
-            <h3>Respiratory Patterns</h3>
-            <p>In a non-intubated patient, the pattern of spontaneous breathing can have significant localizing value. However, these patterns are often obscured by mechanical ventilation.</p>
-            <ul>
-                <li><strong>Cheyne-Stokes Respiration:</strong> A cyclic pattern of breathing with a smooth crescendo in rate and depth, followed by a decrescendo, culminating in a period of apnea. This pattern suggests bilateral deep hemispheric or diencephalic (thalamic) dysfunction and is often seen in metabolic encephalopathies or severe heart failure.</li>
-                <li><strong>Central Neurogenic Hyperventilation:</strong> A pattern of sustained, rapid, deep hyperpnea. This is suggestive of a lesion in the midbrain or upper pons.</li>
-                <li><strong>Apneustic Breathing:</strong> A prolonged pause at the end of full inspiration. This pattern points to a lesion in the lower pons.</li>
-                <li><strong>Ataxic (or Biot's) Breathing:</strong> A completely chaotic and irregular breathing pattern in both rate and depth. This is a pre-terminal pattern that indicates severe damage to the respiratory control centers in the medulla.[3, 6]</li>
-            </ul>
+                            <h3>Assessing Motor Response</h3>
+                            <p>The assessment requires applying a central stimulus (like a trapezius squeeze or supraorbital pressure) to assess for symmetrical responses and posturing, and a peripheral stimulus (nailbed pressure) to each of the four limbs to test for localization or withdrawal. It is essential to document whether the responses are symmetric or asymmetric, as asymmetry strongly points to a focal lesion like a stroke or unilateral injury.</p>
 
-            <h3>General Physical Examination</h3>
-            <p>A thorough general physical examination can reveal vital clues.</p>
-            <ul>
-                <li><strong>Meningismus:</strong> Assess for nuchal rigidity (resistance to passive neck flexion). Its presence is a cardinal sign of meningeal irritation, as seen in meningitis or subarachnoid hemorrhage. This examination should be deferred if there is any concern for cervical spine instability.[2, 6]</li>
-                <li><strong>Fundoscopy:</strong> Examination of the optic fundi with an ophthalmoscope is essential. The presence of papilledema (swelling of the optic disc) is a sign of elevated intracranial pressure. The presence of preretinal or vitreous hemorrhages (Terson syndrome) is strongly associated with aneurysmal subarachnoid hemorrhage.[6]</li>
-                <li><strong>Signs of Trauma:</strong> Carefully inspect the entire head, face, and body for any signs of trauma, such as scalp lacerations, hematomas (including Battle's sign behind the ear or raccoon eyes), or cerebrospinal fluid rhinorrhea or otorrhea, which would point to a traumatic etiology.</li>
-            </ul>
+                            <h3>Interpreting the Response (from Best to Worst)</h3>
+                            <p>The responses are graded according to the GCS motor scale, from highest to lowest function.</p>
+                            <ul>
+                                <li><strong>Obeys Commands (GCS M6):</strong> This is the highest level of motor function. If the patient can be aroused to follow any verbal command, this is their score. Commands should be simple, such as "stick out your tongue," "blink your eyes," or "show me two fingers".
+                                    <ul>
+                                        <li><strong class="pearl">Clinical Pearl:</strong> It is imperative to ensure the patient is responding to the verbal command itself and not simply mimicking a visual cue. For instance, if asking for a "thumbs up," the examiner should not simultaneously make the gesture. Testing with the patient's eyes closed can help eliminate this confounder.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Localizes to Pain (GCS M5):</strong> This is a purposeful movement where the patient's hand moves toward and attempts to remove the source of a central noxious stimulus. A classic example is the hand crossing the midline to push away the examiner's hand during a trapezius squeeze.</li>
+                                <li><strong>Withdrawal / Normal Flexion (GCS M4):</strong> This is a rapid, non-stereotyped flexion of a limb to pull away from a peripheral noxious stimulus (e.g., nailbed pressure). The limb flexes briskly at the elbow or knee to retreat from the pain.</li>
+                                <li><strong>Abnormal Flexion / Decorticate Posturing (GCS M3):</strong> This is a stereotyped, reflexive response to a stimulus. It is characterized by adduction of the arms, flexion of the elbows and wrists over the chest, and extension and internal rotation of the legs. This posture indicates severe damage to the cerebral hemispheres or thalamus, with a lesion <em>above</em> the level of the red nucleus in the midbrain.</li>
+                                <li><strong>Extension / Decerebrate Posturing (GCS M2):</strong> This is also a stereotyped, reflexive response and is a more ominous sign than decorticate posturing. It involves adduction and extension of the arms at the elbows, pronation of the forearms, and flexion of the wrists and fingers. The legs remain extended. This posture indicates a severe lesion in the brainstem <em>at or below</em> the level of the red nucleus.</li>
+                                <li><strong>No Response (GCS M1):</strong> There is no motor response to any stimulus, indicating the most severe level of injury.</li>
+                            </ul>
 
-            <h2>Documentation and Communication: The Synthesis</h2>
-            <p>The final, critical step of the examination process is to synthesize the findings into a clear, accurate, and communicable record. Effective documentation ensures that all members of the clinical team—including nurses, consultants, and covering physicians—are on the same page, allowing for accurate tracking of the patient's neurological trajectory.</p>
+                            <h3>High-Yield Clinical Trick: Differentiating Withdrawal (M4) from Posturing (M3/M2)</h3>
+                            <p>The distinction between purposeful withdrawal (M4) and stereotyped flexion (M3) is a common point of confusion and a source of inter-rater variability in GCS scoring. The following maneuver, based on a key clinical principle, can help make this distinction more objective.</p>
+                            <ul>
+                                <li><strong>Underlying Principle:</strong> Purposeful movements are designed to move away from a threat; therefore, they almost never move <em>into</em> a noxious stimulus. Stereotyped posturing is a fixed motor program that is triggered regardless of the stimulus location.</li>
+                                <li><strong>To Differentiate Flexor Posturing (M3) from Withdrawal (M4):</strong>
+                                    <ol>
+                                        <li>Position the patient's arm in abduction (away from the body).</li>
+                                        <li>Apply a firm pinch to the <em>radial</em> (thumb) side of the forearm.</li>
+                                        <li><strong>Interpretation:</strong> A purposeful withdrawal (M4) will involve pulling the arm further away from the stimulus. A stereotyped flexor posture (M3) will cause the arm to adduct and flex <em>into</em> or across the stimulus, a non-purposeful movement.</li>
+                                    </ol>
+                                </li>
+                                <li><strong>To Differentiate Extensor Posturing (M2) from Withdrawal (M4):</strong>
+                                    <ol>
+                                        <li>Position the patient's arm flexed at the elbow.</li>
+                                        <li>Apply a firm pinch to the <em>ulnar</em> (pinky) side of the forearm.</li>
+                                        <li><strong>Interpretation:</strong> A purposeful withdrawal (M4) will not cause extension. A stereotyped extensor posture (M2) will cause the arm to pathologically extend <em>into</em> the stimulus.</li>
+                                    </ol>
+                                </li>
+                            </ul>
 
-            <h3>The "VERY IMPORTANT RULES" of the Coma Exam</h3>
-            <p>Adherence to several core principles is essential for a safe and effective examination. These rules form the foundation of good clinical practice when assessing a non-participatory patient.</p>
-            <ul>
-                <li><strong>Do No Harm:</strong> This is the foremost principle. Be acutely aware of the patient's environment, including endotracheal tubes, central and arterial lines, and NG tubes. Never apply noxious stimuli to injured tissue or perform maneuvers that could exacerbate an underlying injury, such as the oculocephalic reflex in a patient with potential C-spine trauma.[4]</li>
-                <li><strong>Be Descriptive, Avoid Ambiguous Lingo:</strong> The goal of the note is clear communication, not jargon. Instead of writing "A&Ox0," describe exactly what the patient does. For example, "Patient does not open eyes to voice but moans and withdraws the left arm to nailbed pressure." This level of description is unambiguous and invaluable for anyone subsequently assessing the patient. As one memorable teaching pearl states, "Any neurology resident who writes A&Ox0 for an impaired neurological patient will be caned by an angry Singaporean prison guard".[4]</li>
-                <li><strong>Always Record Sedation:</strong> This point cannot be overemphasized. The interpretation of the entire exam hinges on knowing the patient's sedation status. This information must be prominently displayed at the beginning of any neurological assessment note.[4]</li>
-                <li><strong>Use a Team Approach:</strong> Evaluating an unresponsive patient, especially one who is intubated and sedated, is often not a solo task. It may require a nurse to manage sedation and monitor vital signs, and a second person to help with positioning or restraint. Stimulation can cause dangerous elevations in heart rate and blood pressure or even trigger a seizure. It is unwise to perform this exam alone, particularly for junior clinicians.[4]</li>
-            </ul>
+                            <h3>Leg Responses</h3>
+                            <ul>
+                                <li><strong>Triple Flexion:</strong> When a noxious stimulus is applied to the foot or leg, a common reflexive response is "triple flexion"—simultaneous flexion at the ankle, knee, and hip. This is a stereotyped spinal reflex, not a purposeful withdrawal, and should not be scored as M4. It can be seen even in patients with severe brain injury or brain death if the spinal cord is intact.</li>
+                            </ul>
+                        </div>
+                    </div>
 
-            <h3>A Model for Documentation</h3>
-            <p>An ideal note combines the objectivity of a standardized score with the richness of a descriptive narrative. This allows for both rapid communication of severity (the GCS score) and a detailed understanding of the specific deficits.</p>
-            <ul>
-                <li><strong>Example Note Structure:</strong>
-                    <ul>
-                        <li><strong>Sedation:</strong> "Exam performed 30 minutes after cessation of propofol infusion (previously at 50 mcg/kg/min) and fentanyl infusion (previously at 100 mcg/hr)."</li>
-                        <li><strong>Level of Consciousness (GCS):</strong> "GCS 7T (E2, V-T, M4). Eyes open only to supraorbital pressure. Patient is intubated (V-T). Withdraws all four limbs to nailbed pressure, response is symmetric."</li>
-                        <li><strong>Cranial Nerves:</strong> "Pupils are 4mm, equal, and briskly reactive to light bilaterally; no RAPD. Corneal, gag, and cough reflexes are present and symmetric. Oculocephalic reflex is intact (positive Doll's eyes). C-spine is cleared."</li>
-                        <li><strong>Motor/Reflexes:</strong> "No spontaneous movements noted. Motor exam as above (symmetric withdrawal). Tone is normal throughout. Deep tendon reflexes are 2+ and symmetric. Plantar responses are downgoing bilaterally."</li>
-                        <li><strong>Impression:</strong> "Coma, likely secondary to metabolic encephalopathy given symmetric and intact brainstem examination. Awaiting laboratory results. Will continue to monitor neurological status closely."</li>
-                    </ul>
-                </li>
-            </ul>
+                    <div class="card">
+                        <div class="card-header icon-header">
+                            <i class="fas fa-search"></i>
+                            <h2>Additional Diagnostic Clues</h2>
+                        </div>
+                        <div class="card-body">
+                            <p>Beyond the core examination for localization, other physical findings can provide crucial clues to the underlying etiology of the coma. These signs help the clinician move from asking "where is the lesion?" to "what is the lesion?".</p>
 
+                            <h3>Frontal Release Reflexes</h3>
+                            <p>These are primitive reflexes that are normally suppressed by the frontal lobes in a healthy adult. Their re-emergence ("release") suggests diffuse brain dysfunction, such as in a metabolic encephalopathy, or focal frontal lobe pathology, and they can also be seen in advanced dementia.</p>
+                            <ul>
+                                <li><strong>Glabellar Reflex:</strong> Repetitive tapping on the glabella (the area between the eyebrows) causes persistent, unabated blinking. A normal response is to stop blinking after the first few taps.</li>
+                                <li><strong>Snout Reflex:</strong> Tapping on the closed lips or the philtrum causes a puckering or pursing of the lips.</li>
+                                <li><strong>Rooting Reflex:</strong> Stroking the corner of the mouth causes the patient to turn their head and move their mouth toward the stimulus.</li>
+                                <li><strong>Palmomental Reflex:</strong> Firmly stroking the thenar eminence of the palm causes a brief, reflexive contraction of the ipsilateral mentalis muscle, visible as a twitch or dimpling of the chin.</li>
+                            </ul>
+
+                            <h3>Respiratory Patterns</h3>
+                            <p>In a non-intubated patient, the pattern of spontaneous breathing can have significant localizing value. However, these patterns are often obscured by mechanical ventilation.</p>
+                            <ul>
+                                <li><strong>Cheyne-Stokes Respiration:</strong> A cyclic pattern of breathing with a smooth crescendo in rate and depth, followed by a decrescendo, culminating in a period of apnea. This pattern suggests bilateral deep hemispheric or diencephalic (thalamic) dysfunction and is often seen in metabolic encephalopathies or severe heart failure.</li>
+                                <li><strong>Central Neurogenic Hyperventilation:</strong> A pattern of sustained, rapid, deep hyperpnea. This is suggestive of a lesion in the midbrain or upper pons.</li>
+                                <li><strong>Apneustic Breathing:</strong> A prolonged pause at the end of full inspiration. This pattern points to a lesion in the lower pons.</li>
+                                <li><strong>Ataxic (or Biot's) Breathing:</strong> A completely chaotic and irregular breathing pattern in both rate and depth. This is a pre-terminal pattern that indicates severe damage to the respiratory control centers in the medulla.</li>
+                            </ul>
+
+                            <h3>General Physical Examination</h3>
+                            <p>A thorough general physical examination can reveal vital clues.</p>
+                            <ul>
+                                <li><strong>Meningismus:</strong> Assess for nuchal rigidity (resistance to passive neck flexion). Its presence is a cardinal sign of meningeal irritation, as seen in meningitis or subarachnoid hemorrhage. This examination should be deferred if there is any concern for cervical spine instability.</li>
+                                <li><strong>Fundoscopy:</strong> Examination of the optic fundi with an ophthalmoscope is essential. The presence of papilledema (swelling of the optic disc) is a sign of elevated intracranial pressure. The presence of preretinal or vitreous hemorrhages (Terson syndrome) is strongly associated with aneurysmal subarachnoid hemorrhage.</li>
+                                <li><strong>Signs of Trauma:</strong> Carefully inspect the entire head, face, and body for any signs of trauma, such as scalp lacerations, hematomas (including Battle's sign behind the ear or raccoon eyes), or cerebrospinal fluid rhinorrhea or otorrhea, which would point to a traumatic etiology.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header icon-header">
+                            <i class="fas fa-file-alt"></i>
+                            <h2>Documentation and Communication: The Synthesis</h2>
+                        </div>
+                        <div class="card-body">
+                            <p>The final, critical step of the examination process is to synthesize the findings into a clear, accurate, and communicable record. Effective documentation ensures that all members of the clinical team—including nurses, consultants, and covering physicians—are on the same page, allowing for accurate tracking of the patient's neurological trajectory.</p>
+
+                            <h3>The "VERY IMPORTANT RULES" of the Coma Exam</h3>
+                            <p>Adherence to several core principles is essential for a safe and effective examination. These rules form the foundation of good clinical practice when assessing a non-participatory patient.</p>
+                            <ul>
+                                <li><strong>Do No Harm:</strong> This is the foremost principle. Be acutely aware of the patient's environment, including endotracheal tubes, central and arterial lines, and NG tubes. Never apply noxious stimuli to injured tissue or perform maneuvers that could exacerbate an underlying injury, such as the oculocephalic reflex in a patient with potential C-spine trauma.</li>
+                                <li><strong>Be Descriptive, Avoid Ambiguous Lingo:</strong> The goal of the note is clear communication, not jargon. Instead of writing "A&Ox0," describe exactly what the patient does. For example, "Patient does not open eyes to voice but moans and withdraws the left arm to nailbed pressure." This level of description is unambiguous and invaluable for anyone subsequently assessing the patient. As one memorable teaching pearl states, "Any neurology resident who writes A&Ox0 for an impaired neurological patient will be caned by an angry Singaporean prison guard".</li>
+                                <li><strong>Always Record Sedation:</strong> This point cannot be overemphasized. The interpretation of the entire exam hinges on knowing the patient's sedation status. This information must be prominently displayed at the beginning of any neurological assessment note.</li>
+                                <li><strong>Use a Team Approach:</strong> Evaluating an unresponsive patient, especially one who is intubated and sedated, is often not a solo task. It may require a nurse to manage sedation and monitor vital signs, and a second person to help with positioning or restraint. Stimulation can cause dangerous elevations in heart rate and blood pressure or even trigger a seizure. It is unwise to perform this exam alone, particularly for junior clinicians.</li>
+                            </ul>
+
+                            <h3>A Model for Documentation</h3>
+                            <p>An ideal note combines the objectivity of a standardized score with the richness of a descriptive narrative. This allows for both rapid communication of severity (the GCS score) and a detailed understanding of the specific deficits.</p>
+                            <ul>
+                                <li><strong>Example Note Structure:</strong>
+                                    <ul>
+                                        <li><strong>Sedation:</strong> "Exam performed 30 minutes after cessation of propofol infusion (previously at 50 mcg/kg/min) and fentanyl infusion (previously at 100 mcg/hr)."</li>
+                                        <li><strong>Level of Consciousness (GCS):</strong> "GCS 7T (E2, V-T, M4). Eyes open only to supraorbital pressure. Patient is intubated (V-T). Withdraws all four limbs to nailbed pressure, response is symmetric."</li>
+                                        <li><strong>Cranial Nerves:</strong> "Pupils are 4mm, equal, and briskly reactive to light bilaterally; no RAPD. Corneal, gag, and cough reflexes are present and symmetric. Oculocephalic reflex is intact (positive Doll's eyes). C-spine is cleared."</li>
+                                        <li><strong>Motor/Reflexes:</strong> "No spontaneous movements noted. Motor exam as above (symmetric withdrawal). Tone is normal throughout. Deep tendon reflexes are 2+ and symmetric. Plantar responses are downgoing bilaterally."</li>
+                                        <li><strong>Impression:</strong> "Coma, likely secondary to metabolic encephalopathy given symmetric and intact brainstem examination. Awaiting laboratory results. Will continue to monitor neurological status closely."</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
