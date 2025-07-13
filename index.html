@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unresponsive Patient Evaluation</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
@@ -16,6 +16,35 @@
             max-width: 800px; 
             color: #333;
             background-color: #fdfdfd;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        body.dark-mode {
+            color: #ddd;
+            background-color: #333;
+        }
+        body.dark-mode .card-header {
+            background-color: #444;
+        }
+        body.dark-mode .table {
+            color: #ddd;
+            border-color: #555;
+        }
+        body.dark-mode th {
+            background-color: #555;
+        }
+        body.dark-mode tr:nth-child(even) {
+            background-color: #444;
+        }
+        body.dark-mode .warning {
+            background-color: #442222;
+            border-left-color: #c00;
+        }
+        body.dark-mode .pearl {
+            background-color: #223344;
+            border-left-color: #58a6ff;
+        }
+        body.dark-mode .note {
+            color: #aaa;
         }
         h1, h2, h3 { 
             color: #222;
@@ -23,9 +52,10 @@
             border-bottom: 1px solid #eee;
             padding-bottom: 10px;
         }
-        h1 { font-size: 2.2em; }
-        h2 { font-size: 1.8em; }
-        h3 { font-size: 1.4em; }
+        body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 {
+            color: #ddd;
+            border-bottom-color: #555;
+        }
         p, ul, ol { margin-bottom: 1em; }
         ul { list-style-type: disc; padding-left: 20px; }
         li { margin-bottom: 0.5em; }
@@ -54,6 +84,7 @@
             border-left: 4px solid #c00;
             padding: 10px;
             margin: 1em 0;
+            box-shadow: 0 0 10px rgba(255,0,0,0.2);
         }
        .pearl {
             background-color: #f5faff;
@@ -75,9 +106,18 @@
         .card-header { background-color: #f8f9fa; font-weight: bold; }
         .icon-header { display: flex; align-items: center; }
         .icon-header i { margin-right: 10px; color: #0056b3; }
+        .flowchart { border: 1px solid #ddd; padding: 10px; margin: 10px 0; background: #f9f9f9; text-align: center; }
+        .flowchart ul { list-style: none; padding: 0; }
+        .flowchart li { margin: 10px 0; padding: 10px; border: 1px solid #ccc; background: #fff; position: relative; }
+        .flowchart li:not(:last-child):after { content: '↓'; position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); font-size: 20px; }
+        #searchInput { margin-bottom: 20px; width: 100%; padding: 10px; }
+        .highlight { background-color: yellow; }
     </style>
 </head>
 <body>
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <button onclick="window.print()">Print</button>
+    <input type="text" id="searchInput" placeholder="Search..." onkeyup="searchContent()">
     <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
             <button class="nav-link active" id="checklist-tab" data-bs-toggle="tab" data-bs-target="#checklist" type="button" role="tab" aria-controls="checklist" aria-selected="true">Bedside Checklist</button>
@@ -138,6 +178,14 @@
                                 <li>If engaging: Full neuro (higher cortical: orientation, attention; CN, motor, reflexes, coord, sensory).</li>
                                 <li>Frontal release reflexes (rooting, glabellar, snout, palmomental).</li>
                             </ul>
+                            <h4>General physical</h4>
+                            <ul>
+                                <li>Check for meningismus (nuchal rigidity). Defer if C-spine instability suspected.</li>
+                            </ul>
+                            <h4>Respiratory patterns</h4>
+                            <ul>
+                                <li>Observe in non-intubated patients: Cheyne-Stokes (hemispheric/diencephalic), central neurogenic hyperventilation (midbrain/upper pons), apneustic (lower pons), ataxic (medulla).</li>
+                            </ul>
                             <h4>Coma cranial nerve exam</h4>
                             <table class="table table-bordered">
                                 <thead>
@@ -185,6 +233,10 @@
                                     </tr>
                                 </tbody>
                             </table>
+                            <h4>Fundoscopy</h4>
+                            <ul>
+                                <li>Check for papilledema (elevated ICP) or hemorrhages (SAH).</li>
+                            </ul>
                             <h4>Motor reflexes</h4>
                             <p>Apply noxious to chest:</p>
                             <ul>
@@ -259,7 +311,7 @@
                                 <li>Empiric: Thiamine (before D50).</li>
                                 <li>Overdose: Naloxone (narcs), flumazenil (benzos).</li>
                                 <li>Herniation: Mannitol.</li>
-                                <li>Seizure: benzodiazepines + AED loading dose.</li>
+                                <li>Seizure: benzodiazepines + AED loading dose (e.g., phenytoin, levetiracetam, valproate).</li>
                                 <li>CNS Infection: Vanco/ceftriaxone + acyclovir; dex for pneumo.</li>
                             </ul>
                             <h4>Meningitis specific</h4>
@@ -306,6 +358,17 @@
                         </div>
                         <div class="card-body">
                             <p>The evaluation of an unresponsive patient is a medical emergency that demands a structured, prioritized approach. Before any detailed neurological assessment can be performed, life-threatening conditions must be identified and managed. The primary principle is to treat the patient, not just the neurological signs. The initial actions at the bedside should always follow a systematic algorithm focused on physiological stabilization, as a detailed neurological examination is meaningless in a hemodynamically unstable patient. This initial phase is crucial, as the cause of coma may be a readily reversible condition that, if treated promptly, can lead to rapid clinical improvement.</p>
+
+                            <div class="flowchart">
+                                <h4>Approach Flowchart</h4>
+                                <ul>
+                                    <li>ABCs → Stabilize</li>
+                                    <li>Check reversible causes (glucose, tox)</li>
+                                    <li>Gather history/labs/imaging</li>
+                                    <li>Neurological exam</li>
+                                    <li>Management based on findings</li>
+                                </ul>
+                            </div>
 
                             <h3>Assess and Stabilize: The ABCs</h3>
                             <p>The first and most critical step is a rapid assessment and management of the patient's fundamental physiological status, commonly referred to as the ABCs (Airway, Breathing, Circulation). This must be performed immediately upon encountering an unresponsive patient.</p>
@@ -581,6 +644,8 @@
                                     </tr>
                                 </tbody>
                             </table>
+                            <h3>Fundoscopy</h3>
+                            <p>Check for papilledema (elevated ICP) or hemorrhages (SAH).</p>
                         </div>
                     </div>
 
@@ -634,6 +699,9 @@
                             <ul>
                                 <li><strong>Triple Flexion:</strong> When a noxious stimulus is applied to the foot or leg, a common reflexive response is "triple flexion"—simultaneous flexion at the ankle, knee, and hip. This is a stereotyped spinal reflex, not a purposeful withdrawal. It can be seen even in patients with severe brain injury or brain death if the spinal cord is intact.</li>
                             </ul>
+
+                            <h3>Volitional vs Reflexive Distinction</h3>
+                            <p>Volitional responses are purposeful, e.g., swatting away stimulus, following commands. Reflexive are stereotyped, e.g., posturing, triple flexion, repeatable with minimal variation.</p>
                         </div>
                     </div>
 
@@ -710,6 +778,26 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+
+        function searchContent() {
+            let input = document.getElementById('searchInput').value.toLowerCase();
+            let content = document.querySelectorAll('p, li, th, td');
+            content.forEach(elem => {
+                elem.classList.remove('highlight');
+                if (elem.textContent.toLowerCase().includes(input)) {
+                    elem.classList.add('highlight');
+                }
+            });
+        }
+    </script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
 </body>
 </html>
